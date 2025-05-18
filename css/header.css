@@ -4,7 +4,7 @@
 }
 .header__man {
   position: absolute;
-  top: 90px;
+  top: 30px;
   left: 47%;
   z-index: 1;
 }
@@ -48,17 +48,22 @@
 }
 
 .header__phone {
+  display: flex;
   text-decoration: underline;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
   color: var(--color-text);
   cursor: pointer;
+  text-underline-offset: 5px;
 }
 .header__phone:hover {
   color: var(--red);
   transition: var(--transition);
   transform: scale(1.1);
+}
+.header__burger {
+  display: none;
 }
 
 .header__title {
@@ -79,34 +84,39 @@
   margin-bottom: 50px;
 }
 
-.header__button {
+.header__btn {
+  z-index: 1;
+  position: relative;
   width: 304px;
   height: 60px;
   background: #ff352b;
-  border: none;
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
   color: #f2f2f2;
   cursor: pointer;
-  position: relative;
-  z-index: 1;
+  border: none;
 }
 .header__border {
-  position: relative;
+  position: absolute;
   width: 304px;
   height: 60px;
-  border: 2px solid #f2f2f2;
-  bottom: 50px;
+  border: 1px solid white;
   left: 10px;
+  bottom: -10px;
+  z-index: 0;
 }
-.header__button:hover {
+.header__button {
+  position: relative;
+  cursor: pointer;
+}
+
+.header__btn:hover {
   background: #ff772b;
-  box-shadow: 12px 11px 8px 0px;
+  box-shadow: 5px 7px 0px 0px;
   transform: scale(1.1);
   transition: var(--transition);
 }
-
 .header__description {
   display: flex;
   justify-content: space-between;
@@ -115,7 +125,6 @@
 .header__items {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 .header__items-info {
   display: flex;
@@ -125,13 +134,14 @@
   font-size: 16px;
   line-height: 131%;
   color: var(--color-text);
-  max-width: 200px;
 }
 
-.header__items-info svg {
+.header__items-info img {
   margin-right: 10px;
 }
-
+.header__items-desc {
+  max-width: 125px;
+}
 .header__element-phone:hover svg circle {
   fill: #3d9be9;
   fill-opacity: 1;
@@ -142,17 +152,17 @@
 @media (max-width: 1200px) {
   .header__description {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
   .header__items {
-    flex-direction: column;
+    display: none;
   }
   .header__truk {
     left: 50%;
   }
   .header__man {
-    top: 98px;
-    left: 37%;
+    top: 30px;
+    left: 40%;
   }
 }
 
@@ -165,6 +175,8 @@
   }
   .header__man {
     top: 35px;
+    width: 345px;
+    height: 540px;
   }
   .header__truk {
     display: none;
@@ -185,11 +197,7 @@
     gap: 10px;
     cursor: pointer;
   }
-  .header__burger-elements {
-    display: flex;
-    border: 2px solid var(--color-text);
-    width: 44px;
-  }
+
   .header__title {
     font-size: 28px;
   }
