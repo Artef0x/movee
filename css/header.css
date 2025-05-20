@@ -1,10 +1,11 @@
 .header {
   padding-top: 20px;
   background-color: var(--background);
+  height: 650px;
 }
 .header__man {
   position: absolute;
-  top: 30px;
+  top: 42px;
   left: 47%;
   z-index: 1;
 }
@@ -161,7 +162,6 @@
     left: 50%;
   }
   .header__man {
-    top: 30px;
     left: 40%;
   }
 }
@@ -174,7 +174,7 @@
     font-size: 25px;
   }
   .header__man {
-    top: 35px;
+    top: 110px;
     width: 345px;
     height: 540px;
   }
@@ -234,6 +234,9 @@
 }
 
 @media (max-width: 380px) {
+  .header {
+    height: 600px;
+  }
   .header__man {
     top: 155px;
     left: 19%;
