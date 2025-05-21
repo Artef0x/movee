@@ -1,9 +1,10 @@
-.content__row {
+/* STAGES */
+.stages__row {
   max-width: 1100px;
   padding-top: 95px;
 }
 
-.content__title {
+.stages__title {
   margin-bottom: 10px;
   text-align: center;
   font-size: 30px;
@@ -14,19 +15,19 @@
   font-weight: 600;
   color: var(--color-text);
 }
-.content__list {
+.stages__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
 }
-.content__items {
+.stages__items {
   display: flex;
   align-items: center;
   max-width: 485px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.content__number {
+.stages__number {
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 50px;
@@ -35,7 +36,7 @@
   text-shadow: 0px 4px 4px #fed100;
 }
 
-.content__text {
+.stages__text {
   display: flex;
   flex-direction: column;
 }
@@ -46,11 +47,11 @@
   color: var(--color-text);
 }
 
-.content__h3-title {
+.stages__h3-title {
   font-size: 20px;
 }
 
-.content__h4-title {
+.stages__h4-title {
   font-size: 16px;
   line-height: 131%;
 }
@@ -61,23 +62,32 @@
   color: var(--color-text);
 }
 
-/* CONTENT__BLOCK */
-.content__card-link {
+/* PRICE */
+.price__card-link {
   display: none;
 }
-.content__block {
+.price__block {
   padding-top: 100px;
   max-width: 1305px;
 }
-
-.content__price {
+.price__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+}
+.price__title_size {
+  font-size: 24px;
+}
+.price__content {
   display: flex;
   gap: 20px;
 }
-.content__block .h2-subtitle {
+.price__block .h2-subtitle {
   margin-bottom: 60px;
 }
-.content__subtitle {
+.price__subtitle {
   margin-bottom: 60px;
   text-align: center;
   font-size: 30px;
@@ -90,30 +100,30 @@
   color: var(--color-text);
 }
 
-.content__card {
+.price__card {
   text-align: center;
   border: 1px solid #ebebeb;
   width: 421px;
   padding-top: 85px;
 }
-.content__card:hover {
+.price__card:hover {
   border: 1px solid #fed100;
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 
-.content__card-title {
+.price__card-title {
   margin-bottom: 60px;
 }
-.content__card-subtitle {
+.price__card-subtitle {
   margin-bottom: 25px;
 }
 
-.content__card-price {
+.price__card-price {
   margin-bottom: 55px;
 }
 
-.content__card-button {
+.button-order {
   width: 250px;
   height: 51px;
   font-weight: 500;
@@ -121,7 +131,7 @@
   background: #fed100;
   margin-bottom: 80px;
 }
-.content__card-button:hover {
+.button-order:hover {
   color: white;
   box-shadow: 0 4px 24px #fed100;
   background: #fed100;
@@ -135,18 +145,32 @@
   color: var(--color-text);
 }
 
-/* CONTENT__AUTO */
+/* AUTO */
 
-.content__auto {
+.auto__content {
   max-width: 1220px;
 }
-
-.content__auto-butten {
+.auto__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--color-text);
+  text-align: center;
+}
+.auto__subtitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 60px;
+}
+.auto__butten {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-.content__auto-btn {
+.auto__btn {
   border: 1px solid #ebebeb;
   width: 201px;
   height: 50px;
@@ -157,123 +181,122 @@
   margin-bottom: 100px;
 }
 
-.content__auto-btn:hover {
+.auto__btn:hover {
   border: 1px solid #fed100;
 }
 
-.content__aside-mini,
-.content__circle {
+.auto__aside-mini,
+.auto__circle {
   display: none;
 }
 
-.content__aside .h2-subtitle {
+.auto__aside .h2-subtitle {
   margin-bottom: 35px;
 }
-.content__aside .h4-title {
+.auto__aside .h4-title {
   margin-bottom: 25px;
 }
 
-.content__characteristics svg {
+.auto__characteristics svg {
   margin-right: 10px;
 }
 
-.content__characteristics {
+.auto__characteristics {
   display: flex;
   justify-content: space-evenly;
   position: relative;
 }
 
-.content__arrow-left {
+.auto__btn_arrow-left {
   position: absolute;
   left: 0px;
   top: 180px;
   cursor: pointer;
 }
-.content__arrow-right {
+.auto__arrow-right {
   position: absolute;
   right: 0px;
   top: 180px;
   cursor: pointer;
 }
 
-.content__arrow:hover {
+.auto__arrow:hover {
   transform: scale(1.5);
   transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1052px) {
-  .content__list {
+  .stages__list {
     gap: 10px;
     justify-content: center;
   }
-  .content__items {
+  .stages__items {
     min-width: 100%;
   }
-  .content__number {
+  .stages__number {
     margin-right: 20px;
     padding-left: 5%;
   }
 }
 
 @media (max-width: 996px) {
-  .content__price {
+  .price__content {
     display: flex;
     gap: 20px;
     overflow-x: scroll;
   }
-  .content__aside {
+  .auto__aside,
+  .auto__subtitle {
     display: none;
   }
-  .content__aside-mini {
+  .auto__aside-mini {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .content__aside-subtitle {
+  .auto__aside-subtitle {
     text-align: center;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 660px) {
-  .content__row {
+  .stages__row {
     padding-top: 5%;
   }
-  .content__truk-img {
+  .auto__truk-img {
     width: 321px;
     height: 227px;
   }
-  .content__auto-btn {
+  .auto__btn {
     border: none;
     width: 110px;
     color: var(--color-text);
     background-color: unset;
   }
-  .content__auto-btn:hover {
+  .auto__btn:hover {
     font-weight: 500;
     border: none;
     border-bottom: 1px solid #fed100;
     cursor: pointer;
   }
 
-  .content__subtitle-h2,
-  .content__h4-title,
-  .content-number {
+  .price__subtitle-h2,
+  .stages__h4-title,
+  .price-number {
     display: none;
   }
-  .content__card {
+  .price__card {
     padding-top: 5%;
     width: 100%;
     border: none;
   }
-  .content__card-button {
-    margin-bottom: 20px;
-  }
-  .content__block {
+
+  .price__block {
     padding-top: 5%;
     background: #f8fbff;
   }
-  .content__card-link {
+  .price__card-link {
     display: contents;
     display: flex;
     justify-content: center;
@@ -283,11 +306,11 @@
     color: var(--color-text);
     margin-bottom: 50px;
   }
-  .content__arrow {
+  .auto__arrow {
     display: none;
   }
 
-  .content__circle {
+  .auto__circle {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -299,11 +322,11 @@
     cursor: pointer;
     transition: 0.2s ease-in-out;
   }
-  .content__slider {
+  .auto__slider {
     display: flex;
     gap: 10px;
   }
-  .content__circle:hover {
+  .auto__circle:hover {
     transform: scale(1.2);
     outline-offset: 3px;
     outline: 1px solid #fed100;
