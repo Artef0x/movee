@@ -3,8 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Document</title>
+    <title>movee</title>
   </head>
-  <body></body>
+  <body>
+    <section class="order">
+      <div class="order__container container">
+        <div class="order__title">Закажи переезд прямо сейчас со скидкой %</div>
+        <p class="order__subtitle">Мы перезвоним в течении 10 секунд</p>
+        <div class="order__contact">
+          <div class="order__name">
+            <input type="name" placeholder="Ваше имя" />
+          </div>
+          <div class="order__phone">
+            <input type="tel" placeholder="Телефон" />
+          </div>
+        </div>
+        <div class="order__place">
+          <p class="order__region">
+            Укажите область
+            <select class="order__select-city" name="city">
+              <option>Минская</option>
+              <option>Брестская</option>
+              <option>Гомельская</option>
+              <option>Витебская</option>
+              <option>Гродненская</option>
+              <option>Могилевская</option>
+            </select>
+          </p>
+          <p class="order__city">
+            Укажите город
+            <select class="order__select-city" name="city">
+              <option value="Minsk">Минск</option>
+              <option value="Brest">Брест</option>
+              <option value="Gomel">Гомель</option>
+              <option value="Vitebsk">Витебск</option>
+              <option value="Grodno">Гродно</option>
+              <option value="Mogilev">Могилев</option>
+            </select>
+            <input
+              class="order__place-input"
+              type="text"
+              placeholder="Добавить город"
+            />
+          </p>
+        </div>
+        <p class="order__payment">Способ оплаты</p>
+        <div class="order__select">
+          <span class="order__pay">
+            <input class="order__input-pay" type="radio" name="payment" />
+            Наличными курьеру
+          </span>
+          <span class="order__pay">
+            <input class="order__input-pay" type="radio" name="payment" />
+            Картой курьеру
+          </span>
+          <span class="order__pay">
+            <input class="order__input-pay" type="radio" name="payment" />
+            Банковский перевод
+          </span>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
