@@ -207,7 +207,7 @@
   position: relative;
 }
 
-.auto__btn_arrow-left {
+.auto__arrow-left {
   position: absolute;
   left: 0px;
   top: 180px;
@@ -220,7 +220,7 @@
   cursor: pointer;
 }
 
-.auto__arrow:hover {
+.content-arrow:hover {
   transform: scale(1.5);
   transition: 0.3s ease-in-out;
 }
@@ -306,7 +306,7 @@
     color: var(--color-text);
     margin-bottom: 50px;
   }
-  .auto__arrow {
+  .content-arrow {
     display: none;
   }
 
