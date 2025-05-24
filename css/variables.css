@@ -1,7 +1,8 @@
 :root {
-  --black: #2d2d2d;
-  --white: #ffffff;
   --font-family: 'Montserrat', sans-serif;
-  --second-family: 'Playfair Display', sans-serif;
-  --third-family: 'Forum', sans-serif;
+  --second-family: 'Roboto', sans-serif;
+  --color-text: #333;
+  --red: #ff352b;
+  --background: #fed100;
+  --transition: 0.2s ease-in-out;
 }
