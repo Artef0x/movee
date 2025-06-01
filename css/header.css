@@ -34,6 +34,7 @@
 .header__link {
   gap: 40px;
   display: flex;
+  z-index: 5;
 }
 .header__link-info {
   font-family: var(--font-family);
