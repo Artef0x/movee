@@ -1,3 +1,7 @@
+.baner-mobile {
+  display: none;
+}
+
 .header {
   padding-top: 20px;
   background-color: var(--background);
@@ -185,61 +189,67 @@
 }
 
 @media (max-width: 810px) {
-  .header__link {
+  .banner {
     display: none;
   }
-  .header__phone {
-    display: none;
-  }
-  .header__burger {
+  .baner-mobile {
     display: contents;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    cursor: pointer;
   }
-
-  .header__title {
-    font-size: 28px;
+  .header__logo {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-text);
   }
-  .header__subtitle {
-    font-size: 18px;
-  }
-  .header__block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 500px;
-  }
-  .header__description,
-  .header__border {
-    display: none;
-  }
-
   .header__list {
-    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
   }
   .header__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
     text-align: center;
   }
-  .header__man {
-    top: 146px;
-    left: 26%;
+  .header__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 127%;
+    color: var(--color-text);
+  }
+  .header__subtitle {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--color-text);
+    margin: 0;
+  }
+  .header__man-mobile {
     width: 248px;
     height: 396px;
   }
-  .header__button {
-    margin-bottom: 50px;
+  .header__block-mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-}
-
-@media (max-width: 380px) {
-  .header {
-    height: 600px;
+  .header__btn-mobile {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: #f2f2f2;
+    width: 292px;
+    height: 60px;
+    background: #ff352b;
+    border: none;
+    cursor: pointer;
   }
-  .header__man {
-    top: 155px;
-    left: 19%;
+  .header__btn-mobile:hover {
+    background: #ff772b;
   }
 }
