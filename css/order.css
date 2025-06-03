@@ -29,6 +29,9 @@
   justify-content: space-between;
   margin-bottom: 65px;
 }
+.order__contact input {
+  width: 100%;
+}
 
 .order__name,
 .order__phone {
