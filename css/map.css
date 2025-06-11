@@ -1,0 +1,12 @@
+.map__img {
+  max-width: 100%;
+  position: relative;
+}
+
+.map__element {
+  position: absolute;
+  width: 370px;
+  height: 325px;
+  background-color: red;
+  transform: translate(50px, 20px);
+}
