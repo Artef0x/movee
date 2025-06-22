@@ -1,0 +1,128 @@
+.price__card-price_h2-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.price__card-subtitle_h4-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.price__card-link {
+  display: none;
+}
+.price__block {
+  padding-top: 100px;
+  max-width: 1305px;
+}
+.price__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+}
+.price__title_size {
+  font-size: 24px;
+  margin-bottom: 65px;
+}
+.price__content {
+  display: flex;
+  gap: 20px;
+}
+
+.price__subtitle {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.price__card-title_h2-subtitle {
+  font-size: 24px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 60px;
+}
+
+.price__card {
+  text-align: center;
+  border: 1px solid #ebebeb;
+  width: 421px;
+  padding-top: 85px;
+}
+.price__card:hover {
+  border: 1px solid #fed100;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.price__card-title {
+  margin-bottom: 60px;
+}
+.price__card-subtitle {
+  margin-bottom: 25px;
+}
+
+.price__card-price {
+  margin-bottom: 55px;
+}
+
+.button-price {
+  width: 250px;
+  height: 51px;
+  font-weight: 500;
+  font-size: 20px;
+  background: #fed100;
+  margin-bottom: 80px;
+}
+.button-price:hover {
+  color: white;
+  box-shadow: 0 4px 24px #fed100;
+  background: #fed100;
+  cursor: pointer;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  color: var(--color-text);
+}
+
+@media (max-width: 996px) {
+  .price__content {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 660px) {
+  .price__subtitle-h2,
+  .price-number {
+    display: none;
+  }
+  .price__card {
+    padding-top: 5%;
+    width: 100%;
+    border: none;
+  }
+
+  .price__block {
+    padding-top: 5%;
+    background: #f8fbff;
+  }
+  .price__card-link {
+    display: contents;
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-text);
+    margin-bottom: 50px;
+  }
+}
