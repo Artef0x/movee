@@ -154,10 +154,42 @@
   padding-left: 35px;
 }
 
+.order__time {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
 .order__clock {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 96px;
   line-height: 131%;
   color: #333;
+}
+.order__button {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background: #ff352b;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: #f2f2f2;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 1s;
+}
+.order__button:hover {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #ff772b;
+}
+.order__border {
+  position: absolute;
+  border: 1px solid #fed100;
+  width: 250px;
+  height: 50px;
+  top: 10px;
+  right: -10px;
+  z-index: 1;
 }
