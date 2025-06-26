@@ -1,8 +1,12 @@
 .order__container {
   max-width: 750px;
 }
-
+.order__button-mob {
+  display: none;
+}
 .order__title {
+  display: flex;
+  justify-content: center;
   padding-top: 135px;
   font-family: var(--font-family);
   font-weight: 600;
@@ -11,6 +15,8 @@
 }
 
 .order__subtitle {
+  display: flex;
+  justify-content: center;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -229,4 +235,60 @@
 .order__checkbox-inp:checked + .order__checkbox-agree {
   background-image: none;
   border: 2px solid #333;
+}
+
+@media (max-width: 768px) {
+  .order__title {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .order__subtitle {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .order__clock,
+  .order__row,
+  .order__check-row,
+  .order__payment,
+  .order__border,
+  .order__button,
+  .order__border {
+    display: none;
+  }
+
+  .order__button-mob {
+    display: block;
+    width: 289px;
+    height: 60px;
+    background: #ff352b;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #f2f2f2;
+  }
+  .order__time {
+    display: block;
+  }
+  .order__place {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 525px) {
+  .order__place {
+    display: none;
+  }
+  .order__contact {
+    display: flex;
+    margin-bottom: 65px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .order__name,
+  .order__phone {
+    width: 100%;
+  }
 }
