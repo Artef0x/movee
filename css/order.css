@@ -97,6 +97,7 @@
   padding-left: 35px;
 }
 .order__radio-span {
+  cursor: pointer;
   border-radius: 50%;
   position: absolute;
   width: 24px;
@@ -142,6 +143,7 @@
   border: 2px solid rgba(51, 51, 51, 0.4);
   border-radius: 2px;
   margin-left: -35px;
+  cursor: pointer;
 }
 .order__check-input:checked + .order__check-box {
   background-image: none;
@@ -158,6 +160,12 @@
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+.order__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 .order__clock {
   font-family: var(--font-family);
@@ -178,11 +186,12 @@
   color: #f2f2f2;
   cursor: pointer;
   z-index: 2;
-  transition: transform 1s;
+  transition: 0.2s ease-in-out;
 }
 .order__button:hover {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   background: #ff772b;
+  transform: scale(1.01);
 }
 .order__border {
   position: absolute;
@@ -190,6 +199,34 @@
   width: 250px;
   height: 50px;
   top: 10px;
-  right: -10px;
+  right: 10px;
   z-index: 1;
+}
+
+.order__checkbox-checked {
+  padding-left: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.order__checkbox-inp {
+  position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.order__checkbox-agree {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/order/Vector-agree.svg);
+  margin-left: -25px;
+  top: 8px;
+  font-size: 12px;
+  color: #333;
+}
+
+.order__checkbox-inp:checked + .order__checkbox-agree {
+  background-image: none;
+  border: 2px solid #333;
 }
