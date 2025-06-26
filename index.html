@@ -54,26 +54,72 @@
             />
           </p>
         </div>
-        <p class="order__payment">Способ оплаты</p>
-        <div class="order__select">
-          <span class="order__pay">
-            <input class="order__input-pay" type="radio" name="payment" />
+        <div class="order__payment">Способ оплаты</div>
+        <div class="order__row">
+          <label class="order__radio-label">
+            <input name="rd" class="order__radio-inp" type="radio" />
+            <span class="order__radio-span"> </span>
             Наличными курьеру
-          </span>
-          <span class="order__pay">
-            <input class="order__input-pay" type="radio" name="payment" />
-            Картой курьеру
-          </span>
-          <span class="order__pay">
-            <input class="order__input-pay" type="radio" name="payment" />
-            Банковский перевод
-          </span>
+          </label>
+          <label class="order__radio-label">
+            <input name="rd" class="order__radio-inp" type="radio" />
+            <span class="order__radio-span"> </span>
+            Наличными курьеру
+          </label>
+          <label class="order__radio-label">
+            <input name="rd" class="order__radio-inp" type="radio" />
+            <span class="order__radio-span"> </span>
+            Наличными курьеру
+          </label>
         </div>
-        <!-- CHECKBOX -->
-        <label class="check option">
-          <input class="check__input" type="checkbox" checked />
-          <span class="check__box"></span> Вызов замерщика
-        </label>
+        <div class="order__payment">
+          Дополнительные услуги
+          <span
+            ><svg
+              width="19"
+              height="11"
+              viewBox="0 0 19 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 10L9.5 2L18 10"
+                stroke="#333333"
+                stroke-width="2"
+              /></svg
+          ></span>
+        </div>
+        <div class="order__check-row">
+          <label class="order__check">
+            <input class="order__check-input" type="checkbox" />
+            <span class="order__check-box"></span>
+            Вызов замерщика
+          </label>
+          <label class="order__check">
+            <input class="order__check-input" type="checkbox" />
+            <span class="order__check-box"></span>
+            Упаковка для хрупких предметов
+          </label>
+          <label class="order__check">
+            <input class="order__check-input" type="checkbox" />
+            <span class="order__check-box"></span>
+            Кран
+          </label>
+          <label class="order__check">
+            <input class="order__check-input" type="checkbox" />
+            <span class="order__check-box"></span>
+            Сборка мебели
+          </label>
+          <label class="order__check">
+            <input class="order__check-input" type="checkbox" />
+            <span class="order__check-box"></span>
+            Крупногабаритные предметы
+          </label>
+        </div>
+        <div class="order__time">
+          <div class="order__clock">05:37:25</div>
+          <div class="order__button"></div>
+        </div>
       </div>
     </section>
   </body>
