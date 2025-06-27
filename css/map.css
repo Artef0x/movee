@@ -1,6 +1,9 @@
 .map__container {
   position: relative;
 }
+.map__data-mobile {
+  display: none;
+}
 
 .map__block {
   position: absolute;
@@ -35,4 +38,27 @@
   display: flex;
   gap: 25px;
   justify-content: flex-end;
+}
+@media (max-width: 750px) {
+  .map__block {
+    left: 100px;
+    width: 250px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .map__block {
+    display: none;
+  }
+  .map__data-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+  }
+  .map__data-mobile a::before {
+    content: '✓';
+    margin-right: 20px;
+    color: #fed100;
+  }
 }
