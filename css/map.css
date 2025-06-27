@@ -1,12 +1,38 @@
-.map__img {
-  max-width: 100%;
+.map__container {
   position: relative;
 }
 
-.map__element {
+.map__block {
   position: absolute;
-  width: 370px;
-  height: 325px;
-  background-color: red;
-  transform: translate(50px, 20px);
+  width: 360px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 35px;
+  left: 150px;
+  top: 150px;
+}
+
+.map__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 40px;
+}
+.map__data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 55px;
+}
+.map__data a::before {
+  content: '✓';
+  margin-right: 20px;
+  color: #fed100;
+}
+
+.map__social-list {
+  display: flex;
+  gap: 25px;
+  justify-content: flex-end;
 }
