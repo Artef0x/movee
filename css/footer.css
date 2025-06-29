@@ -1,0 +1,84 @@
+.footer {
+  background-color: var(--background);
+  padding: 50px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--color-text);
+  margin-bottom: 45px;
+}
+
+.footer__subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #0e0f12;
+  max-width: 250px;
+}
+.footer__title + .footer__subtitle {
+  margin-bottom: 35px;
+}
+
+.footer__link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.footer__email {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.footer__button {
+  border: 1px solid var(--color-text);
+  width: 250px;
+  height: 44px;
+  background-color: var(--background);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.footer__button:hover {
+  background-color: #fff;
+  border: none;
+}
+
+.footer__contact {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--color-text);
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
