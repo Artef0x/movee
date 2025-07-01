@@ -1,3 +1,6 @@
+.map__local {
+  position: relative;
+}
 .map__container {
   position: relative;
 }
@@ -20,7 +23,7 @@
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 30px;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 40px;
 }
 .map__data {

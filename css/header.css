@@ -95,11 +95,11 @@
   position: relative;
   width: 304px;
   height: 60px;
-  background: #ff352b;
+  background: var(--red);
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
-  color: #f2f2f2;
+  color: var(--white);
   cursor: pointer;
   border: none;
 }
@@ -107,7 +107,7 @@
   position: absolute;
   width: 304px;
   height: 60px;
-  border: 1px solid white;
+  border: 1px solid var(--white);
   left: 10px;
   bottom: -10px;
   z-index: 0;
@@ -245,7 +245,7 @@
     color: #f2f2f2;
     width: 292px;
     height: 60px;
-    background: #ff352b;
+    background: var(--red);
     border: none;
     cursor: pointer;
   }

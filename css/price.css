@@ -22,7 +22,7 @@
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 30px;
-  color: #333;
+  color: var(--color-text);
   text-align: center;
 }
 .price__title_size {
@@ -50,12 +50,12 @@
 
 .price__card {
   text-align: center;
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--gray);
   width: 421px;
   padding-top: 85px;
 }
 .price__card:hover {
-  border: 1px solid #fed100;
+  border: 1px solid var(--background);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
@@ -76,13 +76,13 @@
   height: 51px;
   font-weight: 500;
   font-size: 20px;
-  background: #fed100;
+  background: var(--background);
   margin-bottom: 80px;
 }
 .button-price:hover {
-  color: white;
-  box-shadow: 0 4px 24px #fed100;
-  background: #fed100;
+  color: var(--white);
+  box-shadow: 0 4px 24px var(--background);
+  background: var(--background);
   cursor: pointer;
 }
 
