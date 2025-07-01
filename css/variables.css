@@ -3,6 +3,8 @@
   --second-family: 'Roboto', sans-serif;
   --color-text: #333;
   --red: #ff352b;
+  --white: #fff;
+  --gray: #ebebeb;
   --background: #fed100;
   --transition: 0.2s ease-in-out;
 }

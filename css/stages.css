@@ -30,7 +30,7 @@
   font-size: 50px;
   color: var(--color-text);
   margin-right: 40px;
-  text-shadow: 0px 4px 4px #fed100;
+  text-shadow: 0px 4px 4px var(--background);
 }
 
 .stages__text {

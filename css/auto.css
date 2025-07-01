@@ -57,18 +57,19 @@
   justify-content: center;
 }
 .auto__btn {
-  border: 1px solid #ebebeb;
+  border: 1px solid var(--gray);
+  background: var(--white);
   width: 201px;
   height: 50px;
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 100px;
 }
 
 .auto__btn:hover {
-  border: 1px solid #fed100;
+  border: 1px solid var(--background);
 }
 
 .auto__aside-mini,
@@ -97,13 +98,13 @@
   height: 51px;
   font-weight: 500;
   font-size: 20px;
-  background: #fed100;
+  background: var(--background);
   margin-bottom: 80px;
 }
 .button-order:hover {
-  color: white;
-  box-shadow: 0 4px 24px #fed100;
-  background: #fed100;
+  color: var(--white);
+  box-shadow: 0 4px 24px var(--background);
+  background: var(--background);
   cursor: pointer;
 }
 
@@ -146,7 +147,7 @@
     gap: 15px;
     height: 10px;
     width: 10px;
-    background-color: var(--black);
+    background-color: var(--color-text);
     border-radius: 50%;
     cursor: pointer;
     transition: 0.2s ease-in-out;
@@ -155,7 +156,7 @@
   .auto__circle:hover {
     transform: scale(1.2);
     outline-offset: 3px;
-    outline: 1px solid #fed100;
+    outline: 1px solid var(--background);
   }
   .auto__slider {
     display: flex;
@@ -176,7 +177,7 @@
   .auto__btn:hover {
     font-weight: 500;
     border: none;
-    border-bottom: 1px solid #fed100;
+    border-bottom: 1px solid var(--background);
     cursor: pointer;
   }
 
