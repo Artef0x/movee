@@ -118,7 +118,7 @@
 }
 
 .header__btn:hover {
-  background: #ff772b;
+  background: var(--orange);
   box-shadow: 5px 7px 0px 0px;
   transform: scale(1.1);
   transition: var(--transition);
@@ -250,6 +250,6 @@
     cursor: pointer;
   }
   .header__btn-mobile:hover {
-    background: #ff772b;
+    background: var(--orange);
   }
 }
