@@ -11,7 +11,7 @@
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 30px;
-  color: var(--black);
+  color: var(--color-text);
 }
 
 .order__subtitle {
@@ -21,7 +21,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 131%;
-  color: var(--black);
+  color: var(--color-text);
   margin-bottom: 45px;
 }
 
@@ -36,7 +36,7 @@
 
 .order__name,
 .order__phone {
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--color-text);
   width: 45%;
 }
 
@@ -51,11 +51,11 @@
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
-  color: var(--black);
+  color: var(--color-text);
 }
 
 .order__place-input {
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--color-text);
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -72,11 +72,11 @@
 }
 .order__select-city {
   border: none;
-  border-bottom: 1px solid var(--black);
+  border-bottom: 1px solid var(--color-text);
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
-  color: var(--black);
+  color: var(--color-text);
   margin-bottom: 55px;
 }
 
@@ -84,7 +84,7 @@
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
-  color: var(--black);
+  color: var(--color-text);
   margin-bottom: 35px;
 }
 
@@ -92,6 +92,7 @@
 .order__row {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 65px;
 }
 .order__radio {
   display: flex;
@@ -136,6 +137,8 @@
 .order__check-row {
   display: flex;
   flex-wrap: wrap;
+  gap: 35px;
+  margin-bottom: 70px;
 }
 .order__checkbox {
   display: flex;
