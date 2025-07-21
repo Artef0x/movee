@@ -302,6 +302,7 @@
     margin-bottom: 65px;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
   .order__name,
   .order__phone {
