@@ -305,4 +305,7 @@
   .order__phone {
     width: 100%;
   }
+  .order__title_hidden {
+    display: none;
+  }
 }
