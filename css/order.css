@@ -141,6 +141,19 @@
   gap: 35px;
   margin-bottom: 70px;
 }
+
+/* drop */
+.close {
+  opacity: 0;
+  max-height: 0;
+  margin-bottom: 0;
+  pointer-events: none;
+}
+
+/* arrowRotate */
+.rotate {
+}
+
 .order__checkbox {
   display: flex;
   align-items: center;
