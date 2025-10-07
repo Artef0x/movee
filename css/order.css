@@ -142,7 +142,7 @@
   margin-bottom: 70px;
 }
 
-/* drop */
+/* close */
 .close {
   opacity: 0;
   max-height: 0;
@@ -150,8 +150,15 @@
   pointer-events: none;
 }
 
-/* arrowRotate */
+/* rotate */
+
 .rotate {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.order__payment_pay {
+  cursor: pointer;
 }
 
 .order__checkbox {
