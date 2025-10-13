@@ -206,6 +206,38 @@
     justify-content: space-between;
     margin: 0;
   }
+
+  .header__burgermb {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header__burgermb span {
+    background-color: black;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+
+  .header__burgermb::before,
+  .header__burgermb::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  .header__burgermb::before {
+    top: 0;
+  }
+  .header__burgermb::after {
+    bottom: 0;
+  }
+
   .header__text {
     display: flex;
     flex-direction: column;
