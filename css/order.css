@@ -141,6 +141,27 @@
   gap: 35px;
   margin-bottom: 70px;
 }
+
+/* close */
+.close {
+  opacity: 0;
+  max-height: 0;
+  margin-bottom: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+/* rotate */
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.order__payment_pay {
+  cursor: pointer;
+}
+
 .order__checkbox {
   display: flex;
   align-items: center;
