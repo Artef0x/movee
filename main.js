@@ -5,13 +5,13 @@ const burger = document.querySelector('.header__burger')
 const menuLink = document.querySelector('.header__link')
 const bodyLock = document.querySelector('body')
 
-dropAction.onclick = function () {
+dropAction.addEventListener('click', function () {
   dropDown.classList.toggle('close')
   arrowRotate.classList.toggle('rotate')
-}
+})
 
-burger.onclick = function () {
+burger.addEventListener('click', function () {
   burger.classList.toggle('active')
   menuLink.classList.toggle('active')
   bodyLock.classList.toggle('lock')
-}
+})
